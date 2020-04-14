@@ -963,7 +963,7 @@ describe('Streaming...', ()=> {
       .pipe(through.obj((chunk,encoding,callback)=> {
         assert(chunk);
         assert(chunk.type);
-        assert.equal(chunk.name.valueOf(), 'testing');
+        assert.equal(chunk.name.valueOf(), 'test');
       }));
     done();
   });
